@@ -1,0 +1,108 @@
+
+<html>
+  <head>
+    <title>Favourite Meals List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style> 
+       .fa-heart { 
+        color: red; 
+        } 
+    </style>
+    <script src="https://kit.fontawesome.com/e6f12e5790.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Favourite Meals List</h1>
+
+    <!-- <div id="container"> -->
+      <div id="cards-holder-2">
+
+        <!-- <div class="card" data-meal-id="${meal.idMeal}">
+            <div class="card-top">
+                <div class="dish-photo">
+                    <img src="${element.strMealThumb}" alt="">
+                </div>
+                <div class="dish-name">
+                    ${element.strMeal}
+                </div>
+                <div class="dish-details">
+                        <span class="button" data-meal-id="${meal.idMeal}">Details</span>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="like">
+                    <i class="fa-solid fa-heart" data-id="${meal.idMeal}"></i>
+                </div>
+                <div class="play">
+                    <a href="${element.strYoutube}" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+      </div>
+
+    <!-- </div> -->
+
+
+    <!-- Meal Details dialogue box-->
+    <div class="modal">
+     <!--<div class="item-details">
+            <span class="close">&times;</span>
+
+            <div class="item-details-left">
+            <img src="${data.meals[0].strMealThumb}" alt="">
+            </div>
+
+            <div class="item-details-right">
+                <div class="item-name">
+                    <strong>Name: </strong>
+                    <span class="item-text">
+                    ${data.meals[0].strMeal}
+                    </span>
+                </div>
+                <div class="item-category">
+                    <strong>Category: </strong>
+                    <span class="item-text">
+                    ${data.meals[0].strCategory}
+                    </span>
+                </div>
+                <div class="item-ingrident">
+                    <strong>Ingredient: </strong>
+                    <span class="item-text">
+                    ${data.meals[0].strIngredient1},${data.meals[0].strIngredient2},
+                    ${data.meals[0].strIngredient3},${data.meals[0].strIngredient4}
+                    </span>
+                </div>
+                <div class="item-instruction">
+                    <strong>Instructions: </strong>
+                    <span class="item-text">
+                    ${data.meals[0].strInstructions}
+                    </span>
+                </div>
+                <div class="item-controls">
+                    <div class="like">
+                        <i class="fa-solid fa-heart" data-id="${meal.idMeal}"></i>
+                    </div>
+                    <div class="play">
+                        <a href="${data.meals[0].strYoutube}" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+    </div>
+
+    <!-- In this way, we can share what was returned by the IIFE with other modules -->
+    <script type="text/javascript" src="script1.js"></script>
+
+    <script type="text/javascript" src="script2.js"></script>
+
+    <script>
+     displayFavMeals.initialize();
+    </script>
+  </body>
+</html>
